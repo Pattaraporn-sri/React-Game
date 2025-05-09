@@ -21,7 +21,7 @@ function Word() {
   const [lockedThai, setLockedThai] = useState<string[]>([]); // รายการคำที่ล็อคในกล่องไทย
   const [lockedEng, setLockedEng] = useState<string[]>([]); // รายการคำที่ล็อคในกล่องอังกฤษ
   const [timeouts, setTimeouts] = useState<Record<string, number>>({});
-  const [countdowns, setCountdowns] = useState<Record<string, number>>({});
+  const [_, setCountdowns] = useState<Record<string, number>>({});
 
   //ตั้งค่าคำศัพท์เริ่มต้นจาก json
   useEffect(() => {

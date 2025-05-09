@@ -33,9 +33,7 @@ function Button({ word, lang, handleClick, handlereturn, canLock }: wordType) {
     return () => clearInterval(countdownInterval);
   }, [Lock, word, lang, handlereturn]); //ใช้ Lock เพื่อรัน effect ใหม่เมื่อ Lock เปลี่ยน //ใช้ Lock  กับ handlereturn เป็น dependency
 
-  const handleLockClick = () => {
-    setLock(!Lock); // Toggle Lock state
-  };
+  //ใช้ handlereturn เพื่อรัน effect ใหม่เมื่อ handlereturn เปลี่ยน
 
   return (
     <div>
